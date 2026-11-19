@@ -17,6 +17,9 @@ MVP Scope
 - Data Source: Free sports/injury API feed 
 
 ## Future Plans
-- Integration with desktop push notifications or Twilio SMS alerts.
 - Automated lineup fetching directly from fantasy platform APIs.
 - Historical tracking of player injury trends and frequency.
+
+## Documentation
+- [System Architecture Diagram](docs/system_diagram.md)
+- [Eisenhower Matrix](docs/eisenhower_matrix.md)
