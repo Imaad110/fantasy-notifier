@@ -1,0 +1,29 @@
+{
+  "players": [
+    {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "PHI"
+    },
+    {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "DEN"
+    },
+    {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "ATL"
+    },
+    {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "PIT"
+    },
+    {
+      "name": "Kalif Raymond",
+      "position": "WR",
+      "team": "DET"
+    }
+  ]
+}
