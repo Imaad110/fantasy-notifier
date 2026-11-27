@@ -34,8 +34,27 @@ def find_injured_players(lineup, nfl_players):
     return flagged
 
 
+def find_single_player(player_name, nfl_players):
+    if not player_name or not nfl_players:
+        return None
+
+    target = player_name.strip().lower()
+    for info in nfl_players.values():
+        full_name = info.get("full_name")
+        if full_name and full_name.strip().lower() == target:
+            return {
+                "name": full_name,
+                "position": info.get("position") or "N/A",
+                "team": info.get("team") or "FA",
+                "status": info.get("injury_status"),
+                "body_part": info.get("injury_body_part") or "Unspecified",
+            }
+
+    return None
+
+
 if __name__ == "__main__":
-    # Test with sample data so we can verify the parser without waiting on the API
+    # Test with sample data so I can verify the parser without waiting on the API
     sample_lineup = [
         {"name": "Jalen Hurts", "position": "QB", "team": "PHI"},
         {"name": "Drake London", "position": "WR", "team": "ATL"},
